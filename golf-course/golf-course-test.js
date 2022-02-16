@@ -41,7 +41,6 @@ describe('Golf Course', function () {
     golfCourse.checkInGroup(group1);
     assert.equal(golfCourse.openings, 5);
     assert.deepEqual(golfCourse.currentlyPlaying, ['Kevin', 'Ted', 'Pat']);
-
     golfCourse.checkInGroup(group2);
     assert.equal(golfCourse.openings, 3);
     assert.deepEqual(golfCourse.currentlyPlaying, ['Bridget', 'Joanna', 'Kevin', 'Ted', 'Pat']);
